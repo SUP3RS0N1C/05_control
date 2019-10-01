@@ -12,11 +12,8 @@ int main(int argc, char *argv[]) {
 	if(input>0)
 	{	printf("양수입니다.");
 	 } 
-	if (input==0)
-	{	printf("0입니다.");
-	}
 	else
-	{	printf("음수입니다");
+	{	printf("양수가 아닙니다.");
 	 } 
 	 
 	return 0;
