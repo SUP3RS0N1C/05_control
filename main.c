@@ -9,11 +9,17 @@ int main(int argc, char *argv[]) {
 	printf("input number : ");
 	scanf("%d", &input);
 	
-	if(input>=0)
-	{	printf("|x| = %d", input);
-	 } 
+	if(input>0)
+	{	
+		printf("positive\n");
+	} 
+	else if(input<0)
+	{	
+		printf("non-positive\n");
+	}
 	else
-	{	printf("|x| = %d", -input);
+	{
+		printf("it\'s 0.\n");
 	}
 	return 0;
 }
