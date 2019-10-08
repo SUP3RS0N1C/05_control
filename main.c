@@ -3,23 +3,17 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
-	int input;
+int main(int argc, char *argv[]) 
+{
+	int i;
+	int meter;
 	
-	printf("input number : ");
-	scanf("%d", &input);
-	
-	if(input>0)
-	{	
-		printf("positive\n");
-	} 
-	else if(input<0)
-	{	
-		printf("non-positive\n");
-	}
-	else
+	while ( i < 3)
 	{
-		printf("it\'s 0.\n");
+		meter = i*1609;
+		printf("%d mmile is %d meter.\n", i, meter);
+		i++;
 	}
+	
 	return 0;
 }
