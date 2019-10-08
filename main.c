@@ -6,14 +6,8 @@
 int main(int argc, char *argv[]) 
 {
 	int i;
-	int meter;
-	
-	while ( i < 3)
-	{
-		meter = i*1609;
-		printf("%d mmile is %d meter.\n", i, meter);
-		i++;
-	}
+	for (i = 0; i < 10; i++)
+		printf("Hello World!\n");
 	
 	return 0;
 }
