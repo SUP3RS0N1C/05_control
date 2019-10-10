@@ -5,9 +5,20 @@
 
 int main(int argc, char *argv[]) 
 {
-	int i;
-	for (i = 0; i < 10; i++)
-		printf("Hello World!\n");
+	int num = 0;
+	char c;
+	
+	printf("input a string : ");
+	
+	while ((c = getchar()) !='\n')
+	{
+		if ( '0' <= c && c <= '9')
+			num++;
+		else
+			num = num;
+	}
+	
+	printf("the number of digits is %d", num);
 	
 	return 0;
 }
